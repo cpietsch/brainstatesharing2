@@ -1,0 +1,24 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io('http://localhost');
+  //  	socket.emit('change', { freq: 14.4, alt:1 });
+
+
+  socket.on('init', function (data) {
+    console.log(data);
+  });
+
+  socket.emit('listTracks', function(data){
+  	console.log("listTracks",data);
+  });
+
+  socket.emit('getTrack', "new.json", function(data){
+  	console.log("getTrack","new.json",data);
+  });
+
+  socket.emit('saveTrack', "test.json", { asd: "ads"},function (data) {
+  	console.log("savedTrack",data)
+  });
+
+  socket.emit('change', { freq: 14.4, alt:1 });
+</script>

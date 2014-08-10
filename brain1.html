@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Brainstatesharing</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/d3-zoom-pan-extent.js"></script>
+		<script src="http://localhost:8080/socket.io/socket.io.js"></script>
+
+		<script src="js/app3.js"></script>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+	<body>
+	
+	<div id="tracklist"></div>
+
+	<div class="controls">
+
+		<input id="load" type="button" value="show/hide tracks">
+
+
+		<span>Volume</span>
+		<input id="volume" type="range" min="0" max="1" step="0.01" value="0.4" />
+		<input id="play" type="button" value="play">
+		<input id="stop" type="button" value="stop">
+		<input id="new" type="button" value="new">
+
+		<span>Trackname</span>
+		<input id="name" value="">
+		<input id="save" type="button" value="save">
+
+		<span>BaseFreq</span>
+		<input id="base" type="range" min="10" max="800" step="1" value="200" />
+		<input id="basein" value="200">
+	</div>
+
+
+
+	<div id="editor"></div>
+	
+
+	</body>
+</html>

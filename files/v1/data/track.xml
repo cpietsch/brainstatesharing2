@@ -1,0 +1,26 @@
+<Track>
+    <Phase>
+        <Frequence>b</Frequence>
+        <Duration>400</Duration>
+    </Phase>
+    <Phase>
+        <Frequence>a</Frequence>
+        <Duration>300</Duration>
+    </Phase>
+    <Phase>
+        <Frequence>b</Frequence>
+        <Duration>50</Duration>
+    </Phase>
+    <Phase>
+        <Frequence>a</Frequence>
+        <Duration>600</Duration>
+    </Phase>
+    <Phase>
+        <Frequence>t</Frequence>
+        <Duration>200</Duration>
+    </Phase>
+    <Phase>
+        <Frequence>0</Frequence>
+        <Duration>0</Duration>
+    </Phase>
+</Track>
